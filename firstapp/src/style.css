@@ -1,0 +1,42 @@
+.list{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.log{
+    height: 30px;
+    width:150px;
+    border: 1px solid black;
+    text-decoration:none;
+}
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 100%);
+  }  
+  button {   
+         background-color: white;    
+          color: blue;   
+          padding: 15px;   
+          margin: 10px 0px;   
+          border: none;   
+          cursor: pointer;   
+           }   
+    button:hover {   
+        background-color: rgb(252, 251, 249); 
+        color:rgb(183, 175, 175);
+        }    
+   form {   
+          border: 3px solid #f1f1f1;   
+      }   
+   input[type=text], input[type=password] {   
+          width: 100%;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;   
+          border: 2px solid green;   
+          box-sizing: border-box;   
+      }       
+   .container {   
+          padding: 25px;   
+          background: linear-gradient(90deg, rgba(0,212,255,1) 41%, rgba(15,1,177,1) 100%);
+      }   
