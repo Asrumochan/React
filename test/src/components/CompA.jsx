@@ -2,7 +2,7 @@ import React from 'react'
 import CompB from  './CompB'
 
 function CompA() {
-    let fname='Asru',lname="parida";
+    let fname='Asrumochan',lname="parida";
   return (
     <div>
         <h1>Component A</h1>
