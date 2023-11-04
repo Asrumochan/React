@@ -1,5 +1,5 @@
 import React from 'react'
-import ClassComp from './components/states/classComp'
+import ClassComp from './components/states/forceUpdate'
 
 function App() {
   return (
