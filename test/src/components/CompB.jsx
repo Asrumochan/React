@@ -4,7 +4,7 @@ function CompB(prop) {
   return (
     <div>
       <h1>Component B</h1>
-        <pre>{JSON.stringify(prop)}</pre>
+        <pre><strong>{JSON.stringify(prop)}</strong></pre>
         <h2>{"name: "+prop.fname+" "+prop.lname}</h2>
     </div>
   )
