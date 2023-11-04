@@ -1,5 +1,5 @@
 import React from 'react'
-import CompA from './components/CompA'
+import CompA from './components/props/CompA'
 
 function App() {
   return (
