@@ -1,12 +1,12 @@
 import React from 'react'
-import ClassComp from './components/states/forceUpdate'
+import SetStateComp from './components/states/setStateComp'
 
 function App() {
   return (
     <div>
         <h1>App Component</h1>
         <hr></hr>
-        <ClassComp/>
+        <SetStateComp/>
     </div>
   )
 }
