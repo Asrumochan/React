@@ -9,7 +9,7 @@ class setStateComp extends Component {
     change=()=>{
         this.setState({name:"Asrumochan"})
     }
-    changeReset=()=>{
+    changeR=()=>{
       this.setState({name:"Hello"})
     }
   render() {
@@ -19,7 +19,7 @@ class setStateComp extends Component {
             <h1>setState Component</h1>
             <h2>{"Name: "+this.state.name}</h2>
             <button onClick={this.change}>change</button>
-            <button onClick={this.changeReset}>reset</button>
+            <button onClick={this.changeR}>reset</button>
       </div>
     )
   }
