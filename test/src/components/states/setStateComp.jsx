@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import 
+import './style.css'
 class setStateComp extends Component {
     state={
         name:"Hello",
