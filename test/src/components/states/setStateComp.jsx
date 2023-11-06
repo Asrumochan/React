@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import 
 class setStateComp extends Component {
     state={
         name:"Hello",
