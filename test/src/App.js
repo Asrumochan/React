@@ -1,12 +1,10 @@
 import React from 'react'
-import SetStateComp from './components/states/setStateComp'
+import Product from './components/product/product'
 
 function App() {
   return (
     <div>
-        <h1>App Component</h1>
-        <hr></hr>
-        <SetStateComp/>
+        <Product/>
     </div>
   )
 }
