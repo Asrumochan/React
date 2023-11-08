@@ -1,12 +1,8 @@
 import React from 'react'
-import Navbar from './components/list_table/navbar'
-import Product from './components/list_table/list_rendering'
-
-
+import Product from './components/product/productSingleHandler'
 function App() {
   return (
     <div>
-      <Navbar/>
         <Product/>
     </div>
   )
