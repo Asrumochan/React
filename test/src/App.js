@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from './components/product/productSingleHandler'
+import Product from './components/test'
 function App() {
   return (
     <div>
