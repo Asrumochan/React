@@ -75,7 +75,7 @@ updateHandler1=(val) =>{
                   {" "+qty1+" "}
                   <button onClick={this.updateHandler1.bind(this,1)}>+</button>
                   </td>
-                <td>{price1*qty1}</td>
+                <td>{price1*qty1}</td> 
               </tr>
             </tbody>
         </table>
