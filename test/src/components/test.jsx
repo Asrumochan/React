@@ -55,13 +55,18 @@ export class test extends Component {
             "quantity": 10
           }]
       }
-      updateHandler=(val)=>{
-        if(this.state.users[val].quantity == 0 && val === -1){
-            alert("Product Quantity cannot be less than 0")
-          }
-          else{
-            this.setState({...this.state.users[val],quantity:this.state.users[val].quantity+val})
-          }
+      decrHandler=(val)=>{
+        // if(this.state.users[val].quantity == 0 && val === -1){
+        //     alert("Product Quantity cannot be less than 0")
+        //   }
+        //   else{
+        //     this.setState({...this.state.users[val],quantity:this.state.users[val].quantity+val})
+        //   }
+        alert(this.state.users[val].quantity-1)
+        this.setState({this.state.users[val].quantity:this.state.users[val].quantity+1   })
+      }
+      incrHandler=(val)=>{
+        alert(this.state.users[val].quantity+1)
       }
   render() {
     return (
@@ -84,7 +89,7 @@ export class test extends Component {
                             <td>{emp.id}</td>
                             <td>{emp.name}</td>
                             <td>{emp.price}</td>
-                            <td><button onClick={this.updateHandler.bind(this,i)}>-</button>{" "+emp.quantity+" "} <button onClick={this.updateHandler.bind(this,i)}>+</button> </td>
+                            <td><button onClick={this.decrHandler.bind(this,i)}>-</button>{" "+emp.quantity+" "} <button onClick={this.incrHandler.bind(this,i)}>+</button> </td>
                             <td>{emp.quantity*emp.price}</td>
                         </tr>
                     })
