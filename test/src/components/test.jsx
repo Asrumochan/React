@@ -60,7 +60,7 @@ export class test extends Component {
             alert("Product Quantity cannot be less than 0")
           }
           else{
-            this.setState({product:{...this.state,qty:this.state.qty+val}})
+            this.setState({...this.state,qty:this.state.qty+val})
           }
       }
   render() {
