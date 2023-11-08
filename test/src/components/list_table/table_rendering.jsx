@@ -72,7 +72,7 @@ export class table_rendering extends Component {
                             <td>{emp.id}</td>
                             <td>{emp.name}</td>
                             <td>{emp.price}</td>
-                            <td>{emp.quanti}</td>
+                            <td>{emp.quantity}</td>
                         </tr>
                     })
                 }
