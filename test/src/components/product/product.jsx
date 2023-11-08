@@ -39,7 +39,7 @@ decreHandler=() =>{
               <tr>
                 <td>{id}</td>
                 <td>{name}</td>
-                <img src={image} alt="" style={{height:'100px'}}/>
+                <td><img src={image} alt="" style={{height:'100px'}}/></td>
                 <td>{price}</td>
                 <td><button onClick={this.decreHandler}>-</button>
                   {" "+qty+" "}

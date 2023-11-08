@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-
-class product extends Component {
+class productSignleHandler extends Component {
   state={
     product:{
     id:101,
@@ -11,7 +10,7 @@ class product extends Component {
   }
 }
 updateHandler=(val) =>{
-  if(this.state.product.qty <= 0 && val == -1){
+  if(this.state.product.qty == 0 && val === -1){
     console.log("sas");
     alert("Product Quantity cannot be less than 0")
   }
@@ -42,7 +41,7 @@ updateHandler=(val) =>{
               <tr>
                 <td>{id}</td>
                 <td>{name}</td>
-                <img src={image} alt="" style={{height:'100px'}}/>
+                <td><img src={image} alt="" style={{height:'100px'}}/></td>  
                 <td>{price}</td>
                 <td><button onClick={this.updateHandler.bind(this,-1)}>-</button>
                   {" "+qty+" "}
@@ -57,4 +56,4 @@ updateHandler=(val) =>{
   }
 }
 
-export default product
+export default productSignleHandler
