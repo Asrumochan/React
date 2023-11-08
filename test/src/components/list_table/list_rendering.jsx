@@ -58,7 +58,14 @@ class list_rendering extends Component {
             <ul>
               {
                 this.users.map((emp)=>{
-                    return <li>{emp.name}</li>
+                    return <li>
+                         {emp.id}
+                         <ul>
+                          <li>{"Name: "+emp.name}</li>
+                          <li>{"Price: "+emp.price}</li>
+                          <li>{"Quantity: "+emp.quantity}</li>
+                         </ul>
+                    </li>
                 })
               }
             </ul>
