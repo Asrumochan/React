@@ -63,11 +63,11 @@ export class test extends Component {
         //     this.setState({...this.state.users[val],quantity:this.state.users[val].quantity+val})
         //   }
         // alert(this.state.users[val].quantity-1)
-        this.setState({users[val]:[...this.state.users[val],quantity:this.state.users[val].quantity-1]})
+        // this.setState({users[val]:[...this.state.users[val],quantity:this.state.users[val].quantity-1]})
         alert(this.state.users[val].quantity)
     }
     incrHandler=(val)=>{
-        this.setState({...this.state.users[val],quantity:this.state.users[val].quantity+1})
+        // this.setState({...this.state.users[val],quantity:this.state.users[val].quantity+1})
         alert(this.state.users[val].quantity)
       }
   render() {
