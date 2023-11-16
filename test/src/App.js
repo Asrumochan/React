@@ -1,11 +1,11 @@
 import React from 'react'
-import Product from './components/test'
 import Navbar from "./components/list_table/navbar"
+import Test from "./components/API/digitalClock/digitalColock"
 function App() {
   return (
     <div>
       <Navbar/>
-        <Product/>
+      <Test/>
     </div>
   )
 }

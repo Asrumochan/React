@@ -1,0 +1,14 @@
+.container{
+    height: 200px;
+    width:500px;
+    margin:auto;
+    border: 2px solid black;
+}
+.clock{
+    text-align: center;
+    border: 2px solid black;
+    margin:auto;
+    margin-top: 80px;
+    color: bisque;
+    background-color: cadetblue;
+}
