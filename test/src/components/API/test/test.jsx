@@ -13,7 +13,9 @@ class test extends Component {
             console.log(resp.data)
             this.setState({users:resp.data})
         })
-        .catch()
+        .catch((err)=>{
+            console.log(err);
+        })
     }
   render() {
     return (
@@ -33,8 +35,8 @@ class test extends Component {
                 </thead>
                 <thead>
                     {
-                     this.state.users.map((user)=>{
-                        return <tr>
+                     this.state.users.map((user,index)=>{
+                        return <tr key={index}>
                             <td>{user.id}</td>
                             <td>{user.name}</td>
                             <td>{user.username}</td>
