@@ -21,12 +21,14 @@ class test extends Component {
         <pre>{JSON.stringify(this.state.users)}</pre>
         {
             this.state.users.length>0 ?<> 
-                         <table>
+                <table className='table table-striped'>
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
+                        <th>User Name</th>
                         <th>Email</th>
+                        <th>City</th>
                     </tr>
                 </thead>
                 <thead>
@@ -35,7 +37,9 @@ class test extends Component {
                         return <tr>
                             <td>{user.id}</td>
                             <td>{user.name}</td>
+                            <td>{user.username}</td>
                             <td>{user.email}</td>
+                            <td>{user.address.city}</td>
                         </tr>
                      })
                     }
