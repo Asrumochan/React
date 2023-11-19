@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Message from "./components/redux/message"
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <Message />
+    </div>
   )
 }
 
