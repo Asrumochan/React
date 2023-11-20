@@ -2,7 +2,7 @@ import React from 'react'
 
 function message() {
     let gmHandler=()=>{
-        alert("m")
+        alert("gm")
     }
     let gnHandler=()=>{
         alert("gn")
