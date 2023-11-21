@@ -20,4 +20,4 @@ function Use_state() {
   )
 }
 
-export default Use_state
+export default Use_stat
