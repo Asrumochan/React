@@ -19,5 +19,4 @@ function Use_state() {
     </div>
   )
 }
-b
 export default Use_state
