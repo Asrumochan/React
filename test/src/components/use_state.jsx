@@ -17,6 +17,6 @@ function Use_state() {
         <span>{val}</span>
         <button onClick={incrHandler}>+</button>
     </div>
-  )h
+  )
 }
 export default Use_state
