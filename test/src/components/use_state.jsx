@@ -10,7 +10,7 @@ function Use_state() {
         setVal(val+1)
     }
   return (
-    <div>
+    <div
         <h3>Use State</h3>
         <hr />
         <button onClick={decrHandler}>-</button>
