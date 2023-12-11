@@ -7,7 +7,7 @@ function Use_state() {
         setVal(val-1)
     }
     let incrHandler=()=>{
-        setVal(val+2)
+        setVal(val+1)
     }
   return (
     <div>
