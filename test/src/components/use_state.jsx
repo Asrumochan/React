@@ -9,7 +9,7 @@ function Use_state() {
     let incrHandler=()=>{
         setVal(val+1)
     }
-  return (
+  return 
     <div>
         <h3>Use State</h3>
         <hr />
