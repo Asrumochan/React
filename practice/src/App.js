@@ -20,11 +20,11 @@ function App() {
     setArr([Math.floor(Math.random() * 10),Math.floor(Math.random() * 10),Math.floor(Math.random() * 10)])  ;
     setNum1(Math.floor(Math.random() * 1000));
     setNum2(Math.floor(Math.random() * 1000));
-    // setRes(num1+num2)
+    setRes(num1+num2)
   }
 
   const changeValue=()=>{
-    setRes(num1+num2);
+    // setRes(num1+num2);
   }
 	return (
 		<>
