@@ -23,7 +23,7 @@ function App() {
 ])
 
 const onDelete=(id)=>{
-  alert(id);
+  setTasks(tasks.filter((task)=> task.id != id))
 }
 
   return (
