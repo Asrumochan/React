@@ -14,11 +14,11 @@ const getAlert=(e)=>{
                   <td>EMAIL</td>
                   <td>GENDER</td>
                 </tr>
-              </thead>
+              </thead>  
               <tbody >
                   {
                      data.map((val)=>(
-                      <tr onClick={getAlert}> 
+                      <tr onClick={()=>getAlert(val.id)}> 
                       <td>{val.id}</td>
                       <td>{val.name}</td>
                       <td>{val.email}</td>
