@@ -1,9 +1,9 @@
 import React from 'react'
-import Message from "./components/use_state"
+import Dog from "./components/API/dog"
 function App() {
   return (
     <div>
-      <Message />
+      <Dog />
     </div>
   )
 }
