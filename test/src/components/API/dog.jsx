@@ -13,11 +13,10 @@ function App() {
       console.log(err)
      })
      })
-  },[sdad])
+  },[])
   return (
     <>
     <pre>{JSON.stringify(data)}</pre>
-    <button onClick={gatData}></button>
     {
       data.map((val)=>(
         <img height={"200px"} width={"210px"}  src={val.message} alt="" />
