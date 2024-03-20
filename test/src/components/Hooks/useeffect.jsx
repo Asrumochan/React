@@ -7,6 +7,7 @@ const Hook =()=>{
     const [counter,setCounter]=useState(0)
 
     useEffect(()=>{
+        console.log("mounted ")
         Axios.get("https://jsonplaceholder.typicode.com/users")
         .then((resp)=>{
             setVal(resp.data)
@@ -14,9 +15,9 @@ const Hook =()=>{
         .catch((err)=>{
             console.log(err)
         })
-        return (
+        return ()=>{
             console.log("effect changed")  
-        )
+        }
     },[counter])
     const getData=()=>{
         setCounter((c)=>c+1);
