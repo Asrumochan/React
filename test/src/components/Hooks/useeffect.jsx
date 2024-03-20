@@ -22,8 +22,8 @@ const Hook =()=>{
 
     return(
         <>
-        <h1 onClick={getData}>Hooks</h1>
-        <h1>{counter}</h1>
+        <h1>Hooks</h1>
+        <h1 onClick={getData}>{counter}</h1>
         {
             val.map((user)=>(
                 <h4>{user.name}</h4>
