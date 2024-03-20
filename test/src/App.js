@@ -1,9 +1,9 @@
 import React from 'react'
-import Dog from "./components/API/dog"
+import Sestate from './components/Hooks/usestate'
 function App() {
   return (
     <div>
-      <Dog />
+      <Sestate/>
     </div>
   )
 }
