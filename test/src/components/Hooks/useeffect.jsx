@@ -5,17 +5,8 @@ import { useState } from "react";
 const Hook =()=>{
     const [val,setVal]=useState([])
     const [counter,setCounter]=useState(0)
-
-
     useEffect(()=>{
         console.log("mounted ")
-    },[])
-    useEffect(()=>{
-        return ()=>{
-            console.log("effect changed")  
-        }
-    },[])
-    useEffect(()=>{
         Axios.get("https://jsonplaceholder.typicode.com/users")
         .then((resp)=>{
             setVal(resp.data)
@@ -23,7 +14,11 @@ const Hook =()=>{
         })
         .catch((err)=>{
             console.log(err)
-        })},[counter]);
+        })
+        return ()=>{
+            console.log("effect changed")  
+        }
+    },[counter]);
     const getData=()=>{
         setCounter((c)=>c+1);
         }
