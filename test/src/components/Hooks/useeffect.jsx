@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const Hook =()=>{
-
     const [val,setVal]=useState([])
     const [counter,setCounter]=useState(0)
 
@@ -24,11 +23,13 @@ const Hook =()=>{
     return(
         <>
         <h1 onClick={getData}>Hooks</h1>
+        <h1>{counter}</h1>
         {
             val.map((user)=>(
                 <h4>{user.name}</h4>
             ))
         }
+        
         </>
     )
 
