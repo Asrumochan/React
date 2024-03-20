@@ -14,7 +14,9 @@ const Hook =()=>{
         .catch((err)=>{
             console.log(err)
         })
-        console.log("val changed")  
+        return (
+            console.log("effect changed")  
+        )
     },[counter])
     const getData=()=>{
         setCounter((c)=>c+1);
