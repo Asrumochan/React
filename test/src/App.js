@@ -1,9 +1,9 @@
 import React from 'react'
-import Sestate from './components/Hooks/usestate'
+import Usestate from './components/Hooks/usestate'
 function App() {
   return (
     <div>
-      <Sestate/>
+      <Usestate/>
     </div>
   )
 }
