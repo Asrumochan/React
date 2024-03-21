@@ -1,11 +1,13 @@
 import React from 'react'
+const ContactList = ({contacts,userData}) => {
+    const showData=(contact)=>{
+        userData(contact)
+    }
 
-const ContactList = ({contacts}) => {
   return (
     <div>
-        <pre>{JSON.stringify(contacts)}</pre>
         {
-            <table className='table table-striped'>
+            <table className='table table-striped '>
             <thead>
         <tr>
             <th>ID</th>
@@ -17,7 +19,7 @@ const ContactList = ({contacts}) => {
                    {
                      contacts.map((contact, index) =>{
                         return (
-                            <tr key={index}>
+                            <tr key={index} onClick={()=>showData(contact)}>
                                 <td>{contact.login.uuid}</td>
                                 <td>{contact.name.first+" "+contact.name.last}</td>
                                 <td>{contact.email}</td>
@@ -27,7 +29,6 @@ const ContactList = ({contacts}) => {
                    }
                     </tbody>
                 </table>
-           
         }
     </div>
   )
