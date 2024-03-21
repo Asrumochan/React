@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
-import Useeffect from './components/Hooks/useeffect'
-import Usestate from './components/Hooks/usestate'
+import Navbar from './components/propsDrilling/Navbar'
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import Home from './components/propsDrilling/Home'
+import Contact from './components/propsDrilling/Contact' 
 function App() {
-  const [flag ,setFlag]=useState(true)
-  const changeFlag=()=>{
-    setFlag(!flag)
-  }
+
   return (
     <div>
-      {
-        flag ? <Useeffect/> : <Usestate/>
-      }
-       <button onClick={changeFlag}>Change </button>
+      < Router>
+       <Navbar/>
+       <Routes>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+       </Routes>
+      </Router>
     </div>
   )
 }
