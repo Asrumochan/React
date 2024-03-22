@@ -5,10 +5,10 @@ const ContactDetails = ({user}) => {
     <div>
         <div className="card">
             <div className="card-header">
-            <img src={user.picture?.large} alt="" />
+            <img src={user.picture.large} alt="" />
             </div>
             <div className="card-body">
-                <h3>{user.name?.last}</h3>
+                <h3>{user.name.last}</h3>
             </div>
         </div>
     </div>
