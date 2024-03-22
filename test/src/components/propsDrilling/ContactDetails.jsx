@@ -8,7 +8,7 @@ const ContactDetails = ({user}) => {
             <img src={user.picture.large} alt="" />
             </div>
             <div className="card-body">
-                <h3>{user.name.last}</h3>
+                <h3>{user.name.first +" "+ user.name.last}</h3>
             </div>
         </div>
     </div>

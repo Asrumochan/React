@@ -32,7 +32,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="col-4">
-                <ContactDetails user={user}/> 
+                {
+                    Object.keys(user).length>0 && <ContactDetails user={user}/> 
+                }
                 </div>
             </div>
         </div>
