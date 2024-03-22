@@ -28,7 +28,9 @@ const Contact = () => {
                 <div className=" col-8">
                     <h1>Contact Details </h1>
                     <div className='contacts'>
-                <ContactList contacts={contacts} userData={userData}/>
+                        {
+                            contacts.length >0 ? <ContactList contacts={contacts} userData={userData}/> : <h2>NO DATA</h2>
+                        }
                     </div>
                 </div>
                 <div className="col-4">
