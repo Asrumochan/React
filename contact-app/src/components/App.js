@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 function App() {
   const LOCAL_STORAGE_KEY ="contacts"
   const [contacts,setContacts]=useState([])
-  
+
   const AddContactHandler = (name, email) => {
     setContacts(prevContacts => {
       const updatedContacts = [...prevContacts, { name, email }];
@@ -14,6 +14,12 @@ function App() {
       return updatedContacts;
     });
   };
+
+  const deleteCon=(name)=>{
+    setContacts(contacts.filter((contact)=>{
+      return contact.name != name ;
+    }))
+  }
   useEffect(() => {
     const retrievedContacts = localStorage.getItem(LOCAL_STORAGE_KEY);
     if (retrievedContacts) {
@@ -26,7 +32,7 @@ function App() {
      <div className="ui container">
     <Header/>
     <AddContact AddContactHandler={AddContactHandler}/>
-    <ContactList contacts={contacts}/>
+    <ContactList contacts={contacts} deleteContact={deleteCon}/>
      </div>
     </>
   );
