@@ -9,7 +9,7 @@ const ContactCard = ({contact,deleteContact}) => {
           <div>{contact.email}</div>
         </div>
         <div style={{ textAlign: 'right' }}>
-        <i className="trash alternate outline icon" style={{color:"red"}} onClick={()=>deleteContact(contact.name)}></i>
+        <i className="trash alternate outline icon" style={{color:"red"}} onClick={()=>deleteContact(contact.id)}></i>
     </div>
         
       </div>
