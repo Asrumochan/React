@@ -3,11 +3,25 @@
  import ContactList from "./ContactList";
 
 function App() {
+  const contacts =[
+    {
+      id:"1",
+      name:"Asru",
+      email:"asru@gmail.com",
+    },
+    {
+      id:"1",
+      name:"Sital",
+      email:"padhi.sital@gmail.com",
+    }
+  ]
   return (
     <>
+     <div className="ui container">
     <Header/>
     <AddContact/>
-    <ContactList/>
+    <ContactList contacts={contacts}/>
+     </div>
     </>
   );
 }
