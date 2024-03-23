@@ -1,5 +1,5 @@
  import Header from "./Header";
- import { v4 as uuidv4 } from 'uuid';
+ import { v4 as uuidv4 } from 'uuidv4';
  import AddContact from "./AddContact";
  import ContactList from "./ContactList";
 import { useEffect, useState } from "react";
