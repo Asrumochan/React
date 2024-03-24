@@ -10,6 +10,7 @@ const ContactList = ({contacts,deleteContact}) => {
 
   return (
     <div>
+        <h1>Contact List</h1>
         <div className="ui celled list">
           {renderContactList}
         </div>

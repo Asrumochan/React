@@ -1,8 +1,9 @@
  import Header from "./Header";
- import { v4 as uuidv4 } from 'uuidv4';
+ import { v4 as uuidv4 } from 'uuid';
  import AddContact from "./AddContact";
  import ContactList from "./ContactList";
 import { useEffect, useState } from "react";
+import {BrowserRouter as Router ,Routes,Route} from 'react-router-dom'
 
 function App() {
   const LOCAL_STORAGE_KEY ="contacts"
@@ -31,11 +32,13 @@ function App() {
   return (
     <>
      <div className="ui container">
-    <Header/>
-    <AddContact AddContactHandler={AddContactHandler}/>
-    {
-        contacts.length>0 ? <ContactList contacts={contacts} deleteContact={deleteCon}/> : <h1>NO CONTACTS TO SHOW</h1>
-    }
+     <Router>
+     <Header/>
+    <Routes>
+      <Route path="/add" element={<AddContact AddContactHandler={AddContactHandler}/>}/>
+      <Route path="/" element={contacts.length>0 ? <ContactList contacts={contacts} deleteContact={deleteCon}/> : <h1>NO CONTACTS TO SHOW</h1>}/>
+    </Routes>
+    </Router>
      </div>
     </>
   );
