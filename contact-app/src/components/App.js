@@ -4,6 +4,7 @@
  import ContactList from "./ContactList";
 import { useEffect, useState } from "react";
 import {BrowserRouter as Router ,Routes,Route} from 'react-router-dom'
+import ContactDetails from "./ContactDetails";
 
 function App() {
   const LOCAL_STORAGE_KEY ="contacts"
@@ -33,10 +34,11 @@ function App() {
     <>
      <div className="ui container">
      <Router>
-     <Header/>
+    <Header/>
     <Routes>
       <Route path="/add" element={<AddContact AddContactHandler={AddContactHandler}/>}/>
       <Route path="/" element={contacts.length>0 ? <ContactList contacts={contacts} deleteContact={deleteCon}/> : <h1>NO CONTACTS TO SHOW</h1>}/>
+      <Route path="/contact/:id" element={<ContactDetails/>}/>
     </Routes>
     </Router>
      </div>

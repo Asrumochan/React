@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const AddContact = ({AddContactHandler}) => {
+const AddContact = (props) => {
   const [name,setName]=useState("")
   const [email,setEmail]=useState("")
 
@@ -10,7 +11,7 @@ const AddContact = ({AddContactHandler}) => {
         alert("All fields are mandatory")
         return
       }
-      AddContactHandler(name, email)
+      props.AddContactHandler(name, email)
       setName("")
       setEmail("")
   }
@@ -18,6 +19,7 @@ const AddContact = ({AddContactHandler}) => {
     <div>
         <div className="ui main">
           <h2>Add Contact</h2>
+          <Link to="/"><button className='ui button green right'>Contact List</button></Link>
           <form className='ui form' onSubmit={add}>
             <div className='field'>
               <label>Name</label>
