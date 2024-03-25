@@ -7,7 +7,7 @@ const ContactCard = (props) => {
   return (
     <div className="item">
         <img src={user} alt="" className='ui avatar image'/>
-        <div className="content" onClick={()=>{navigate(`/contact/${id}`,{state:props.contact})}}>
+        <div className="content" onClick={()=>{navigate(`/contact/${id}`,{state:props.contact})}} style={{cursor:"pointer"}}>
           <div className="header">{name}</div>
           <div>{email}</div>
         </div>
