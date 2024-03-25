@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const AddContact = (props) => {
   const [name,setName]=useState("")
   const [email,setEmail]=useState("")
-
+  const navigate=useNavigate()
   const add=(e)=>{
       e.preventDefault();
       if(name==="" || email===""){
@@ -14,12 +14,12 @@ const AddContact = (props) => {
       props.AddContactHandler(name, email)
       setName("")
       setEmail("")
+      navigate('/')
   }
   return (
     <div>
         <div className="ui main">
           <h2>Add Contact</h2>
-          <Link to="/"><button className='ui button green right'>Contact List</button></Link>
           <form className='ui form' onSubmit={add}>
             <div className='field'>
               <label>Name</label>

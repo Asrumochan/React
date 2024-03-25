@@ -37,7 +37,7 @@ function App() {
     <Routes>
       <Route path="/add" element={<AddContact AddContactHandler={AddContactHandler}/>}/>
       <Route path="/" element={contacts.length>0 ? <ContactList contacts={contacts} deleteContact={deleteCon}/> : <h1>NO CONTACTS TO SHOW</h1>}/>
-      <Route path="/contact/:id" element={<ContactDetails contacts={contacts}/>}/>
+      <Route path="/contact/:id" element={<ContactDetails/>}/>
     </Routes>
     </Router>
      </div>
