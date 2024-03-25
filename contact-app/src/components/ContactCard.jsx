@@ -1,5 +1,4 @@
 import React from 'react'
-
 import user from "../Images/user.png"
 import { Link } from 'react-router-dom'
 const ContactCard = (props) => {

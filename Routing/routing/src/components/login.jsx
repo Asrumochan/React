@@ -1,11 +1,12 @@
 import React from 'react'
-
-const login = () => {
+import {useLocation} from 'react-router-dom'
+const Login = () => {
+    let location=useLocation()
   return (
     <div>
-      <h1>login</h1>
+      <h1>login successful {location.state.name}</h1>
     </div>
   )
 }
 
-export default login
+export default Login

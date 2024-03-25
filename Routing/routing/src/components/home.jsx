@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink ,useNavigate} from 'react-router-dom';
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
     { id: 3, name: 'user 3' }
   ];
  let navigate = useNavigate();
+ const [name,setName]=useState('')
   return (
     <div>
       <ul>
@@ -17,8 +18,11 @@ const Home = () => {
           </li>
         ))}
       </ul>
-      <button onClick={()=>{navigate('/login',{replace:true})}}>Login</button>
+
+      <input type="text" onChange={(e)=>setName(e.target.value)}/>
+      <button onClick={()=>{navigate('/login',{replace:true ,state:{name}})}}>Login</button>
       <button onClick={()=>{navigate('/register')}}>Register</button>
+      <hr />
       <button onClick={() => navigate(-1)}>Go Back</button>
       <button onClick={() => navigate(1)}>Go Forward</button>
     </div>
