@@ -1,8 +1,8 @@
 import React from 'react'
 import image from '../Images/detail.jpeg'
 
-const ContactDetails = (contact) => {
-    console.log(contact)
+const ContactDetails = (props) => {
+    
   return (
     <div>
         <div className="main">
