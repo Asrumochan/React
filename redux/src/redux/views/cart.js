@@ -26,14 +26,16 @@ const Cart = () => {
                             <th>Total Price</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         <tr>
-                            <td>{product.name}</td>
+                            <td style={{alignContent:'center'}}>{product.name}</td>
                             <td><img src={product.image} style={{height:"100px",width:"100px"}} alt="" /></td>
-                            <td>{product.price}</td>
-                            <td>
-                                <button disabled={product.qty===1} onClick={decrHandler}>-</button> {product.qty} <button onClick={incrHandler}>+</button> </td>
-                            <td>{product.price*product.qty}</td>
+                            <td style={{alignContent:'center'}}>{product.price}</td>
+                            <td style={{alignContent:'center'}}>
+                                <button disabled={product.qty===1} onClick={decrHandler}>-</button> 
+                                {product.qty}
+                                 <button onClick={incrHandler}>+</button> </td>
+                            <td style={{alignContent:'center'}}>{product.price*product.qty}</td>
                         </tr>
                     </tbody>
             </table>
