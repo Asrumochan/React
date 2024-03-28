@@ -1,8 +1,12 @@
-
+import Cart from './redux/views/cart'
+import {Provider} from 'react-redux'
+import { store } from './redux/store';
 function App() {
   return (
     <>
-    <h1>Hello</h1>
+    <Provider store={store}>
+    <Cart/>
+    </Provider>
     </>
   );
 }
