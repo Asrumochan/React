@@ -5,7 +5,7 @@ import { incrAction,decrAction } from '../mesage/message.action'
 const Cart = () => {
     const dispatch = useDispatch()
     const product =useSelector((product)=> {
-        return prodduct 
+        return product 
     })
     const decrHandler=()=>{
         dispatch(decrAction())
