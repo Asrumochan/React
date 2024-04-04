@@ -1,5 +1,5 @@
 import React from 'react'
-import UseReduce from './components/Hooks/UseReduce.jsx'
+import UseReduce from './components/Hooks/Usememo'
 
 function App() {
 
