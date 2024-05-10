@@ -12,7 +12,7 @@ const Counter = () => {
   return (
     <div>
             <button data-testid="decr" onClick={decrHandler}>-</button>
-            <p data-testid='count'>{count}</p>
+            <p data-testid='count'>Count:{count}</p>
             <button data-testid='incr' onClick={incrHandler}>+</button>
     </div>
   )
